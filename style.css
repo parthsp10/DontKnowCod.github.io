@@ -1,6 +1,5 @@
 /* ====================================
    PARTH PATEL - PORTFOLIO CSS
-   Modern Data Scientist & ML Engineer Portfolio
    ==================================== */
 
 /* ========== CSS VARIABLES ========== */
@@ -95,6 +94,28 @@ nav {
     align-items: center;
 }
 
+.profile-logo {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-primary);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    border-color: var(--accent-tertiary);
+}
+
+/* Keep old logo style as backup in case image doesn't load */
 .logo {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 700;
